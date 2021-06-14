@@ -1,7 +1,21 @@
+html, body {
+height: 100%;
+margin: 0;
+}
+
 #map {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+#section1 {
+    height: 90%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
