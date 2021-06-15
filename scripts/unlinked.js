@@ -1,12 +1,14 @@
+//1st batch
+
 //Scale UI
-/*L.control.scale({
+L.control.scale({
   metric: false,
   imperial: true,
   position: 'bottomleft'
-}).addTo(map);*/
+}).addTo(map);
 
 //Watermark
-/*L.Control.Watermark = L.Control.extend({
+L.Control.Watermark = L.Control.extend({
   onAdd: function(map) {
     var img = L.DomUtil.create('img');
     img.src = 'https://via.placeholder.com/140x100';
@@ -16,10 +18,12 @@
   onRemove: function(map) {},
 });
 L.control.watermark = function(opts) {return new L.Control.Watermark(opts);}
-L.control.watermark({position: 'topright'}).addTo(map);*/
+L.control.watermark({position: 'topright'}).addTo(map);
+
+
 
 //Custom geojson polygon
-/*var geojsonMarker = {
+var geojsonMarker = {
   "type": "FeatureCollection",
   "features": [{
     "type": "Feature",
@@ -38,11 +42,12 @@ L.control.watermark({position: 'topright'}).addTo(map);*/
     "properties": {"name": "Danger"}
   }]
 }
-L.geoJSON(geojsonMarker).addTo(map);*/
+L.geoJSON(geojsonMarker).addTo(map);
+
 
 
 //Leaflet Marker Class
-/*var LeafletIcon = L.Icon.extend({
+var LeafletIcon = L.Icon.extend({
   options: {
     shadowUrl: 'https://leafletjs.com/examples/custom-icons/leaf-shadow.png',
     iconSize: [38, 95],
@@ -50,35 +55,63 @@ L.geoJSON(geojsonMarker).addTo(map);*/
     shadowAnchor: [4, 62],
     popupAnchor: [12, -90]
   }
-});*/
+});
+
+
 
 //instenses of Marker Class
-/*var orangeIcon = new LeafletIcon({iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-orange.png'});
+var orangeIcon = new LeafletIcon({iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-orange.png'});
     greenIcon = new LeafletIcon({iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-green.png'}),
     redIcon = new LeafletIcon({iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-red.png'})
 
 var greenMarker = L.marker([51.5, -0.09], {icon: greenIcon}).addTo(map);
 var redMarker = L.marker([51.5, -0.08], {icon: redIcon}).addTo(map);
-var orangeMarker = L.marker([51.5, -0.1], {icon: orangeIcon}).addTo(map);*/
+var orangeMarker = L.marker([51.5, -0.1], {icon: orangeIcon}).addTo(map);
 
 //Circle Marker
-/*var circle = L.circle([51.508, -0.11], {
+var circle = L.circle([51.508, -0.11], {
   color: 'black',
   fillColor: 'red',
   fillOpacity: 0.5,
   radius: 500
-}).addTo(map);*/
+}).addTo(map);
 
 //Polygon Marker
-/*var polygon = L.polygon([
+var polygon = L.polygon([
   [51.509, -0.08],
   [51.503, -0.06],
   [51.51, -0.047]
-]).addTo(map);*/
+]).addTo(map);
 
 //Marker Word Popups
-/*orangeMarker.bindPopup("<b> This is Orange </b><br> ");
+orangeMarker.bindPopup("<b> This is Orange </b><br> ");
 greenMarker.bindPopup("<b> This is Green </b><br> ");
 redMarker.bindPopup("<b> This is Red </b><br> ");
 circle.bindPopup("Danger Zone").openPopup();
-polygon.bindPopup("Potential Bounty");*/
+polygon.bindPopup("Potential Bounty");
+
+
+//2nd batch
+//adds a bunch of markers
+var xy = function(x, y) {
+  if (L.Util.isArray(x)) { // When doing xy([x, y]);
+    return yx(x[1], x[0]);
+  }
+  return yx(y, x); // When doing xy(x, y);
+};
+
+var sol = L.latLng([500, 500]);
+L.marker(sol).addTo(map);
+map.setView( [70, 120], 1);
+
+var sol      = xy(175.2, 145.0);
+var mizar    = xy( 41.6, 130.1);
+var kruegerZ = xy( 13.4,  56.5);
+var deneb    = xy(218.7,   8.3);
+
+L.marker(     sol).addTo(map).bindPopup(      'Sol');
+L.marker(   mizar).addTo(map).bindPopup(    'Mizar');
+L.marker(kruegerZ).addTo(map).bindPopup('Krueger-Z');
+L.marker(   deneb).addTo(map).bindPopup(    'Deneb');
+
+var travel = L.polyline([sol, deneb]).addTo(map);
