@@ -15,5 +15,6 @@ If this becomes popular here are some extra ideas:
 * Bonus Loot Tables
   * When a player posts a recap they get to pick some loot from a selection that is chosen based on their level and/or the quality of the recap.
 * Dice roller.
+* Initiative Tracker
 
 This list can, and probably will, be expanded in the future as this website continues it's early development.

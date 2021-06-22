@@ -25,8 +25,8 @@ var Marker = L.Icon.extend({
   }
 });
 
-var startingMarker = L.marker([508.25, 873.7277896009092]).addTo(map);
-var bossRoomMarker = L.marker([439.0416660308838, 204.394391995711]).addTo(map);
+var startingMarker = L.marker([514.25, 873.7277896009092]).addTo(map);
+var bossRoomMarker = L.marker([903.75, 568.8239745978759]).addTo(map);
 
 //get coords
 var lat, lng;
