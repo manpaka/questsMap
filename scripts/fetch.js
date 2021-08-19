@@ -8,7 +8,7 @@ Local URL
 scripts/bandit.json
 */
 
-//Fetch badnit json file
+//Fetch bandit json file
 fetch('../scripts/bandit.json')
   .then(function(response) {
     return response.json();
