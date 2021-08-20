@@ -1,0 +1,19 @@
+{
+  "quests": [{
+      "title": "General Quest 1",
+      "party": "4-6 | 3rd Level Adventurers",
+      "type": "Dungeon Crawl",
+      "hook": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor.",
+      "img": "https://i.pinimg.com/564x/0d/e0/7f/0de07fde548565fb7a2a7cfdc7a68584.jpg",
+      "img_cred": "Credit to Park Jong Won"
+    }, {
+      "title": "General Quest 2",
+      "party": "3-4 | 1st Level Adventurers",
+      "type": "Mystery Investigation",
+      "hook": "Retra nulla a pretium. Maecenas vel sapien sit amet arcu viverra",
+      "img": "https://i.pinimg.com/564x/f2/24/c4/f224c4a1356c3145b8b50f1a05abf759.jpg",
+      "img_cred": "Credit to Moga Alexandru"
+    }, {
+      "title": "none"
+    }]
+}

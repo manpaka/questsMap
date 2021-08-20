@@ -1,0 +1,15 @@
+{
+  "characters": [{
+    "name": "John Doe",
+    "attribute": "1st Level Human Fighter",
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor pharetra nulla a pretium. Maecenas vel sapien sit amet arcu viverra",
+    "img": "https://i.pinimg.com/564x/e6/dc/b7/e6dcb7e97e6f2ac5fe11e5a15c0970ce.jpg",
+    "img_cred": "Credit to Moga Alexandru"
+  }, {
+    "name": "John thing",
+    "attribute": "1st Level Human Fighter",
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor pharetra nulla a pretium. Maecenas vel sapien sit amet arcu viverra",
+    "img": "https://i.pinimg.com/564x/e6/dc/b7/e6dcb7e97e6f2ac5fe11e5a15c0970ce.jpg",
+    "img_cred": "Credit to Moga Alexandru"
+  }, {"name": "none"}]
+}

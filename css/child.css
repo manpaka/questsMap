@@ -1,7 +1,99 @@
+.large-title {
+  font-weight: bolder;
+  font-size: 50px;
+}
+.medium-text {
+  font-size: 20px;
+}
+.large-text {
+  font-size: 25px;
+}
+
+.is-disabled {
+  color: currentColor;
+  opacity: 0.5;
+  background-color: #ddd
+}
+
+.archive-list {
+  display: flex;
+  width: 1200px;
+  margin-top: 30px;
+  margin-left: 2.5%;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}
+
+.card-post {
+  align-self: center;
+  width: 95%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #ede7e1;
+  border-color: #aaaaaa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.sub-text {
+  margin-left: 5px;
+}
 
 
-/* Character Classes */
-.char-image {}
-.char-name {}
-.char-class {}
-.char-level {}
+/* Character CSS */
+.archive-list>.char-list {
+  width: 100%;
+  margin-left: 5%;
+}
+
+.char-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.char-class {
+    margin-left: 10px;
+}
+
+.char-notes {
+  width: 95%;
+  margin-top: 4%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.char-text {
+  height: 100px;
+  margin-left: 25px;
+  padding-top: 3.5%;
+  overflow-y: auto;
+}
+
+
+/* Quests CSS */
+.archive-list>.quest-list {
+  width: 100%;
+  margin-left: 5%;
+}
+
+.quest-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.quest-party {
+    margin-left: 10px;
+}
+
+.quest-hook {
+  width: 95%;
+  margin-top: 4%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.quest-text {
+  height: 100px;
+  margin-left: 25px;
+  padding-top: 3.5%;
+  overflow-y: auto;
+}
