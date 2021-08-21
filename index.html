@@ -50,38 +50,83 @@
         </p>
       </div>
 
-      <div class="archive-list">
-        <div class="quest-list" id="quest-list">
+      <div class="row titles">
+        <div class="col">
+          <h1>Quests</h1>
+          <p>
+            Quest Postings that are made by Characters
+          </p>
+        </div>
+        <div class="col">
+          <h1>Bounties</h1>
+          <p>
+            Plot Hooks and Storylines that are made by DM's
+          </p>
+        </div>
+      </div>
 
-          <template>
-            <div class="card card-post">
-              <div class="row">
-                <img id="quest-img" class="quest-image" src="" alt="">
-                <div class="col">
-                  <div class="card-body quest-title text-dark">
-                    <h1><ins id="quest-title"></ins></h1>
-                  </div>
-                  <div class="row sub-text">
-                    <div class="col">
-                      <h3 id="quest-party" class="col quest-party text-secondary"></h3>
+      <div class="row">
+        <div class="col archive-list">
+          <div class="quest-list" id="quest-list">
+            <template id="quest-template">
+              <div class="card card-post">
+                <div class="row">
+                  <img id="quest-img" class="quest-image" src="" alt="">
+                  <div class="col">
+                    <div class="card-body quest-title text-dark">
+                      <h1><ins id="quest-title"></ins></h1>
                     </div>
-                    <div class="col">
-                      <h3 id="quest-type" class="col quest-type text-secondary"></h3>
+                    <div class="row sub-text">
+                      <div class="col">
+                        <h3 id="quest-party" class="col quest-party text-secondary"></h3>
+                      </div>
+                      <div class="col">
+                        <h3 id="quest-type" class="col quest-type text-secondary"></h3>
+                      </div>
                     </div>
-                  </div>
-                  <div class="card quest-hook">
-                    <div class="card-body quest-text">
-                      <i id="quest-hook"></i>
+                    <div class="card quest-hook">
+                      <div class="card-body quest-text">
+                        <i id="quest-hook"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </template>
-
+            </template>
+          </div>
         </div>
-      </div>
 
+        <div class="col archive-list">
+          <div class="bounty-list" id="bounty-list">
+            <template id="bounty-template">
+              <div class="card card-post">
+                <div class="row">
+                  <img id="bounty-img" class="bounty-image" src="" alt="">
+                  <div class="col">
+                    <div class="card-body bounty-title text-dark">
+                      <h1><ins id="bounty-title"></ins></h1>
+                    </div>
+                    <div class="row sub-text">
+                      <div class="col">
+                        <h3 id="bounty-party" class="col bounty-party text-secondary"></h3>
+                      </div>
+                      <div class="col">
+                        <h3 id="bounty-type" class="col bounty-type text-secondary"></h3>
+                      </div>
+                    </div>
+                    <div class="card bounty-hook">
+                      <div class="card-body bounty-text">
+                        <i id="bounty-hook"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 
