@@ -7,7 +7,6 @@
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
   <link href="/css/child.css" rel="stylesheet" />
-
   <title>Bulletin</title>
 </head>
 
@@ -37,6 +36,14 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+              <li class="nav-item"><a class="nav-link is-disabled"><h2>Bulletin</h2></a></li>
+              <li class="nav-item"><a class="nav-link" href="characters.html"><h2>Characters</h2></a></li>
+              <li class="nav-item"><a class="nav-link" href="rules.html"><h2>Rules</h2></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.worldanvil.com/w/confederation-marches-illogicalconsistency/map/58766450-0d0b-4bbc-8b52-7506d5dc5b74"><h2>Map</h2></a></li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -65,17 +72,29 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="small-titles">
+        <h1>Quests</h1>
+        <p>
+          Quest Postings that are made by Characters
+        </p>
+      </div>
+
+      <div class="row main-row">
         <div class="col archive-list">
           <div class="quest-list" id="quest-list">
+
             <template id="quest-template">
               <div class="card card-post">
                 <div class="row">
+
                   <img id="quest-img" class="quest-image" src="" alt="">
+
                   <div class="col">
-                    <div class="card-body quest-title text-dark">
-                      <h1><ins id="quest-title"></ins></h1>
+
+                    <div class="card-body text-dark">
+                      <h1 id="quest-title"></h1>
                     </div>
+
                     <div class="row sub-text">
                       <div class="col">
                         <h3 id="quest-party" class="col quest-party text-secondary"></h3>
@@ -84,27 +103,38 @@
                         <h3 id="quest-type" class="col quest-type text-secondary"></h3>
                       </div>
                     </div>
+
                     <div class="card quest-hook">
                       <div class="card-body quest-text">
                         <i id="quest-hook"></i>
                       </div>
                     </div>
+
                   </div>
+
                 </div>
               </div>
             </template>
+
           </div>
         </div>
 
-        <div class="col archive-list">
+        <div class="small-titles">
+          <h1>Bounties</h1>
+          <p>
+            Plot Hooks and Storylines that are made by DM's
+          </p>
+        </div>
+
+        <div class="col archive-list bounty-margin">
           <div class="bounty-list" id="bounty-list">
             <template id="bounty-template">
               <div class="card card-post">
                 <div class="row">
                   <img id="bounty-img" class="bounty-image" src="" alt="">
                   <div class="col">
-                    <div class="card-body bounty-title text-dark">
-                      <h1><ins id="bounty-title"></ins></h1>
+                    <div class="card-body text-dark">
+                      <h1 id="bounty-title"></h1>
                     </div>
                     <div class="row sub-text">
                       <div class="col">

@@ -11,6 +11,19 @@
   font-size: 25px;
 }
 
+.titles {
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.small-titles {
+  display: none;
+}
+
+.sub-text {
+  margin-left: 5px;
+}
+
 .is-disabled {
   color: currentColor;
   opacity: 0.5;
@@ -20,8 +33,8 @@
 .archive-list {
   display: flex;
   margin-top: 30px;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 30px;
+  margin-right: 30px;
   background-color: #f0f0f0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
 }
@@ -36,23 +49,37 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
-.sub-text {
-  margin-left: 5px;
-}
-
-.titles {
-  margin-left: 20px;
-}
-
-/* Character CSS */
-.archive-list-one>.char-list {
+/* Card Classes */
+.archive-list>.char-list {
   width: 100%;
   margin-left: 5%;
 }
 
+.archive-list>.quest-list {
+  width: 100%;
+  margin-left: 0%;
+}
+
+.archive-list>.bounty-list {
+  width: 100%;
+  margin-left: 0%;
+}
+
 .char-image {
-  width: 300px;
-  height: 300px;
+  width: 12vw;
+  height: 12vw;
+  object-fit: cover;
+}
+
+.quest-image {
+  width: 12vw;
+  height: 12vw;
+  object-fit: cover;
+}
+
+.bounty-image {
+  width: 12vw;
+  height: 12vw;
   object-fit: cover;
 }
 
@@ -60,7 +87,31 @@
   margin-left: 10px;
 }
 
+.quest-party {
+  margin-left: 10px;
+}
+
+.bounty-party {
+  margin-left: 10px;
+}
+
+.quest-type {}
+
+.bounty-type {}
+
 .char-notes {
+  width: 95%;
+  margin-top: 4%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.quest-hook {
+  width: 95%;
+  margin-top: 4%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.bounty-hook {
   width: 95%;
   margin-top: 4%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
@@ -69,30 +120,7 @@
 .char-text {
   height: 100px;
   margin-left: 25px;
-  padding-top: 3.5%;
   overflow-y: auto;
-}
-
-/* Quests CSS */
-.archive-list>.quest-list {
-  width: 100%;
-  margin-left: 5%;
-}
-
-.quest-image {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-
-.quest-party {
-  margin-left: 10px;
-}
-
-.quest-hook {
-  width: 95%;
-  margin-top: 4%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 .quest-text {
@@ -102,31 +130,167 @@
   overflow-y: auto;
 }
 
-/* Bounty */
-.archive-list>.bounty-list {
-  width: 100%;
-  margin-left: 5%;
-}
-
-.bounty-image {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-
-.bounty-party {
-  margin-left: 10px;
-}
-
-.bounty-hook {
-  width: 95%;
-  margin-top: 4%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
-}
-
 .bounty-text {
   height: 100px;
   margin-left: 25px;
   padding-top: 3.5%;
   overflow-y: auto;
 }
+
+.nav-item {
+  display: none;
+}
+
+/* Shrink Images */
+@media (max-width: 2200px) {
+  .large-title {
+    font-weight: bolder;
+    font-size: 48px;
+  }
+
+  .medium-text {
+    font-size: 25px;
+  }
+
+  .large-text {
+    font-size: 20px;
+  }
+
+  .char-image {}
+
+  .quest-image {
+    width: 12vw;
+    height: 300px;
+  }
+
+  .bounty-image {
+    width: 12vw;
+    height: 300px;
+  }
+
+  .char-notes {}
+
+  .quest-hook {
+    margin-top: 5%;
+    margin-bottom: 0%;
+  }
+
+  .bounty-hook {
+    margin-top: 5%;
+    margin-bottom: 0%;
+  }
+}
+
+/* Shrink Cards, Move Margins */
+@media (max-width: 1700px) {
+  .card-post {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .char-image {}
+
+  .quest-image {
+    width: 14vw;
+    height: 250px;
+  }
+
+  .bounty-image {
+    width: 14vw;
+    height: 250px;
+  }
+
+  .char-notes {}
+
+  .quest-hook {
+    height: 30%;
+    margin-top: 1%;
+    margin-top: 0%;
+  }
+
+  .bounty-hook {
+    height: 30%;
+    margin-top: 1%;
+    margin-top: 0%;
+  }
+}
+
+/* Display Small-titles */
+@media (max-width: 1400px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .char-class {}
+
+  .quest-party {
+    font-size: 18px;
+  }
+
+  .bounty-party {
+    font-size: 18px;
+  }
+
+  .quest-type {
+    font-size: 18px;
+  }
+
+  .sub-text>.col {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .quest-hook {
+    height: 50%;
+  }
+
+  .bounty-hook {
+    height: 50%;
+  }
+
+  .bounty-type {
+    font-size: 18px;
+  }
+
+  .large-title {
+    font-size: 40px;
+  }
+
+  .medium-text {
+    font-size: 20px;
+  }
+
+  .large-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .titles {
+    display: none;
+  }
+
+  .char-list > .col {
+    flex: none;
+  }
+
+  .quest-list > .col {
+    flex: none;
+  }
+  
+  .bounty-list > .col {
+    flex: none;
+  }
+
+  .small-titles .nav-item {
+    display: contents;
+  }
+
+
+}
+
+/* Remove Images and Change Navbars */
+@media (max-width: 991px) {}
+
+/* Clean up everything */
+@media (max-width: 600px) {}
