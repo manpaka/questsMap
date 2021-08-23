@@ -118,20 +118,20 @@
 }
 
 .char-text {
-  height: 100px;
+  margin-bottom: 10px;
   margin-left: 25px;
   overflow-y: auto;
 }
 
 .quest-text {
-  height: 100px;
+  margin-bottom: 10px;
   margin-left: 25px;
   padding-top: 3.5%;
   overflow-y: auto;
 }
 
 .bounty-text {
-  height: 100px;
+  margin-bottom: 10px;
   margin-left: 25px;
   padding-top: 3.5%;
   overflow-y: auto;
@@ -266,27 +266,29 @@
 }
 
 @media (max-width: 1300px) {
+  .main-row > .row {
+    flex: none;
+  }
+
   .titles {
     display: none;
   }
 
-  .char-list > .col {
+  .char-list>.col {
     flex: none;
   }
 
-  .quest-list > .col {
+  .quest-list>.col {
     flex: none;
   }
-  
-  .bounty-list > .col {
+
+  .bounty-list>.col {
     flex: none;
   }
 
   .small-titles .nav-item {
     display: contents;
   }
-
-
 }
 
 /* Remove Images and Change Navbars */

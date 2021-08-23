@@ -5,24 +5,24 @@
       "type": "Dungeon Crawl",
       "hook": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor.",
       "img": "https://i.pinimg.com/564x/0d/e0/7f/0de07fde548565fb7a2a7cfdc7a68584.jpg",
-      "img_cred": "Credit to Park Jong Won"
+      "img_cred": "Park Jong Won"
     }, {
       "title": "General Quest 2",
       "party": "3-4 | 1st Level",
       "type": "Mystery Investigation",
       "hook": "Retra nulla a pretium. Maecenas vel sapien sit amet arcu viverra",
       "img": "https://i.pinimg.com/564x/f2/24/c4/f224c4a1356c3145b8b50f1a05abf759.jpg",
-      "img_cred": "Credit to Moga Alexandru"
+      "img_cred": "Moga Alexandru"
     }, {
       "title": "none"
     }],
   "bounties": [{
-        "title": "General Quest 1",
-        "party": "4-6 | 3rd Level",
-        "type": "Dungeon Crawl",
-        "hook": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor.",
-        "img": "https://i.pinimg.com/564x/0d/e0/7f/0de07fde548565fb7a2a7cfdc7a68584.jpg",
-        "img_cred": "Credit to Park Jong Won"
+        "title": "Drakens Rest",
+        "party": "3-5 | 5th Level",
+        "type": "Mystery",
+        "hook": "You heard the story of a “Mad Necromancer,” a wizened old necromancer that preyed on a desperate town in their time of need. What Did He Create? What did it cost? And most importantly… How could it have gone so wrong?",
+        "img": "https://cdn.discordapp.com/attachments/755151493379784804/879005877737254912/elena-holysheva-abandoned-village-artstation_300x300.jpg",
+        "img_cred": "Elena Holysheva"
       }, {
         "title": "General Quest 2",
         "party": "3-4 | 1st Level",

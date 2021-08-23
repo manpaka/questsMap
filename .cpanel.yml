@@ -1,0 +1,5 @@
+---
+  deployment:
+    tasks:
+      - export DEPLOYPATH=home2/ilepp/quests.ilepp.com
+      - /bin/cp/ -R README.md $DEPLOYPATH
