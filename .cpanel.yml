@@ -2,4 +2,9 @@
   deployment:
     tasks:
       - export DEPLOYPATH=home2/ilepp/quests.ilepp.com
-      - /bin/cp/ -R questsMap $DEPLOYPATH
+      - /bin/cp/ characters.html $DEPLOYPATH
+      - /bin/cp/ index.html $DEPLOYPATH
+      - /bin/cp/ rules.html $DEPLOYPATH
+      - /bin/cp/ .cpanel.yml $DEPLOYPATH
+      - /bin/cp/ -R css $DEPLOYPATH
+      - /bin/cp/ -R scripts $DEPLOYPATH
