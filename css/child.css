@@ -57,12 +57,12 @@
 
 .archive-list>.quest-list {
   width: 100%;
-  margin-left: 0%;
+  margin-left: 5%;
 }
 
 .archive-list>.bounty-list {
   width: 100%;
-  margin-left: 0%;
+  margin-left: 5%;
 }
 
 .char-image {
@@ -102,18 +102,21 @@
 .char-notes {
   width: 95%;
   margin-top: 4%;
+  margin-bottom: 3%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 .quest-hook {
   width: 95%;
   margin-top: 4%;
+  margin-bottom: 3%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 .bounty-hook {
   width: 95%;
   margin-top: 4%;
+  margin-bottom: 3%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
@@ -156,72 +159,63 @@
     font-size: 20px;
   }
 
-  .char-image {}
+  .char-image {
+    width: 200px;
+    height: auto;
+  }
 
   .quest-image {
-    width: 12vw;
-    height: 300px;
+    width: 200px;
+    height: auto;
   }
 
   .bounty-image {
-    width: 12vw;
-    height: 300px;
+    width: 200px;
+    height: auto;
   }
 
-  .char-notes {}
+  .char-notes {
+    margin-bottom: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
   .quest-hook {
     margin-top: 5%;
-    margin-bottom: 0%;
+    margin-bottom: 3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .bounty-hook {
     margin-top: 5%;
-    margin-bottom: 0%;
+    margin-bottom: 3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
-/* Shrink Cards, Move Margins */
-@media (max-width: 1700px) {
-  .card-post {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .char-image {}
-
-  .quest-image {
-    width: 14vw;
-    height: 250px;
-  }
-
-  .bounty-image {
-    width: 14vw;
-    height: 250px;
-  }
-
-  .char-notes {}
-
-  .quest-hook {
-    height: 30%;
-    margin-top: 1%;
-    margin-top: 0%;
-  }
-
-  .bounty-hook {
-    height: 30%;
-    margin-top: 1%;
-    margin-top: 0%;
-  }
-}
-
-/* Display Small-titles */
-@media (max-width: 1400px) {
+/* Change Font Sizes */
+@media (max-width: 1600px) {
   h1 {
     font-size: 30px;
   }
 
-  .char-class {}
+  .large-title {
+    font-size: 40px;
+  }
+
+  .medium-text {
+    font-size: 20px;
+  }
+
+  .large-text {
+    font-size: 20px;
+  }
+
+  .char-class {
+    font-size: 18px;
+  }
 
   .quest-party {
     font-size: 18px;
@@ -233,6 +227,21 @@
 
   .quest-type {
     font-size: 18px;
+  }
+
+  .char-notes {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .quest-hook {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .bounty-hook {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .sub-text>.col {
@@ -252,47 +261,99 @@
     font-size: 18px;
   }
 
-  .large-title {
-    font-size: 40px;
+  /* Move IMG to Top of card */
+  .char-list>.card-post>.row {
+    display: block;
   }
 
-  .medium-text {
-    font-size: 20px;
+  .quest-list>.card-post>.row {
+    display: block;
   }
 
-  .large-text {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 1300px) {
-  .main-row > .row {
-    flex: none;
+  .bounty-list>.card-post>.row {
+    display: block;
   }
 
-  .titles {
-    display: none;
+  .char-image {
+    height: 200px;
+    width: 100%;
   }
 
-  .char-list>.col {
-    flex: none;
+  .quest-image {
+    height: 200px;
+    width: 100%;
   }
 
-  .quest-list>.col {
-    flex: none;
-  }
-
-  .bounty-list>.col {
-    flex: none;
-  }
-
-  .small-titles .nav-item {
-    display: contents;
+  .bounty-image {
+    height: 200px;
+    width: 100%;
   }
 }
 
 /* Remove Images and Change Navbars */
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+
+  /* Removes .Row Flex */
+  .main-row {
+    display: contents;
+    flex: none;
+  }
+
+  /* Fixes the Margins */
+  .archive-list {
+    margin-left: auto;
+  }
+
+  .small-titles>h1 {
+    margin-top: 3%;
+    margin-left: 4vw;
+  }
+
+  .small-titles>p {
+    margin-left: 4vw;
+  }
+
+  /* Changing Displays */
+  .titles {
+    display: none;
+  }
+
+  #sidebarToggle {
+    display: none;
+  }
+
+  #sidebar-wrapper {
+    display: none;
+  }
+
+  .nav-item {
+    display: contents;
+  }
+
+  div>.small-titles {
+    display: contents;
+  }
+}
 
 /* Clean up everything */
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+  .large-title {
+    font-size: 30px;
+  }
+
+  .large-text {
+    font-size: 18px;
+  }
+
+  .small-titles>h1 {
+    font-size: 30px;
+  }
+
+  .small-titles>p {
+    font-size: 16px;
+  }
+
+  img {
+    display: none;
+  }
+}
