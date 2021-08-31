@@ -1,8 +1,17 @@
 # The Quests and Adventures Repo
-This Website has changed course due to prices becoming too high. Meaning that it'll be starting again from scratch.
+This is the code for a West Marches Campaign Website. If you find anything weird or wrong with the code, then just post an Issue onto the repo.
 
 # To Do List
-- Get some quests filled out
+### Primary/High Priority Tasks
+- Finish Rules and Guidelines on Website.
+- Finish the Github Community section.
+
+### Secondary Tasks
+- Add Posting Page to allow for ease of use when making recaps and posts on the website.
+	- Add a new page for viewing recaps and lore.
+- Get more quests and bounties added to the JSON.
+- Get some characters added to the JSON.
+
 
 # Changelog and Updates
 ### Update 21/08/23
