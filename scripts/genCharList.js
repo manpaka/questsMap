@@ -31,13 +31,10 @@ function create_char_card(char, i) {
 
   a = temp.content.getElementById("char_img");
   a.setAttribute("src", char_img);
-
   b = temp.content.getElementById("char_name");
   b.innerHTML = char_name
-
   c = temp.content.getElementById("char_class");
   c.innerHTML = char_class
-
   d = temp.content.getElementById("char_notes");
   d.innerHTML = char_note
 

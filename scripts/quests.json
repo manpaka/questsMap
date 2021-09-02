@@ -1,24 +1,35 @@
 {
   "quests": [{
-      "title": "Quest Template",
+      "title": "Mission Template",
       "party": "Party Size | Level",
       "type": "Theme",
       "hook": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor.",
+      "players": 0,
       "img": "",
       "img_cred": ""
     }],
   "bounties": [{
         "title": "Drakens Rest",
-        "party": "3-5 | 5th Level",
-        "type": "Mystery",
+        "party": "3 - 5 | 5th Level",
+        "type": "",
         "hook": "You heard the story of a “Mad Necromancer,” a wizened old man that preyed on a desperate town in their time of need. What Did He Create? What did it cost? And most importantly… How could it have gone so wrong?",
-        "img": "https://cdn.discordapp.com/attachments/755151493379784804/879005877737254912/elena-holysheva-abandoned-village-artstation_300x300.jpg",
-        "img_cred": "Elena Holysheva"
+        "players": 0,
+        "img": "https://lh3.googleusercontent.com/V0KDp81JImLhPLABX2SfI4pwsEmIwL8UO5ra6RPbnDINjwy3wFJOsA7_DkUt2RNUOE0kpJPRERM1QonMtJm9kAFI9d_RptWX8IHItaMC71BWRhs78qkBl5JTZZNIJA-Ouip9qFFRRwJv_y2PzdUWut24fjSmLFsqUmVE6BR7oJKrQ1p09wxII6S1KIpUu_xYnsma-NkayGMDXhDAzp2lOWDdglos8fth5VutaOctugclYGKNFrJxJ44Mga2paJE9s-ujuUnvEN8mHw7yfLmK02T71PfMTTu319kibbZTNpDZIt4gs4J7YAORFlUDYKuoTkGNknQh7E6sCVcptAIlOzrBdeoYqDi572myVsF9vwKhE2SrWt9Ky2alXIqOnlPD4ru3d7Pgo-L-RfGwRhopiIC3QABQIqq-_411HWWLGHQ9k_zX8VMcOA9uSyOjVv1DGVqauB_E5-omXgQ0p6hwuaac_r0vLVI4xrIh0b_dtN2g2G0wvKP73S9WzPo8B5bpXpgB_d90IVDQ0_a3zKKbR2u_wRdi2k_8pxBTRDMjnbrkVLegjv3oOasxvLRu1h0EQ7m7KuSXqPuK4cdMR3HonTHzKJqWTvU-8BupELNJylTe9dMJxgOjQt4OTqiHvB_oVkQLiFjS30eoQHzDOJM77x6oE550Vi52EFKVeEjclmYdFLU9-qDi6S5MTYEPHR0lbiNqFI7A7LD1WMpg5XhSMeLg=s866-no?authuser=0",
+        "img_cred": "Elena Holysheva on Art Station"
       }, {
-        "title": "Bounty Template",
+        "title": "Deal with Goblin Village",
+        "party": "4 - 6 | 8th Level",
+        "type": "",
+        "hook": "Goblins have been raiding the outlying area and the clan needs to be dealt with. - Posted by Lord Bronzewood",
+        "players": 0,
+        "img": "https://lh3.googleusercontent.com/rt2Adc0jQtDncgbddiX1lAUS64KjT7BQFqrd7ircsLdtHvGjsovhAPYJUBIu65DgcCSr_0S6tgRKmtdSda5GD2veL8LJe3fYQT3dDveMkL-4xcX2BQsx5Uo7HnD0-DohI7wymBiEPw8ZucBChidfwQaZoOow8PFx0xt6nnckn9L13yxRuIK0OUfqhPwLT9ulxt5awbc9UyPwnTehJjXCv0bOcuBHnt6KD0XJugrRMPVjBbskeC3K3rLeeEDCJGx541tpyob59C0TbvLnnpNtsgRJUZnlTQiL3GGeDvDfmbSjHA-34txiIb4D-z4PAMT4PpTtK7t9c66zBu2MUPE_MddqtJSEbnwmQWR51LPaI-yCHTzi93pvwfHITegjMSkOCAZ_M7dkvEKREw-aiJDkFW5WnuOP_s88jR4hCZ2J6W-TMmwlMvY1I2ajZv_EL_v4M6wqpZoAYBk0sZ5qVkoxY2NdOKKO726lx7GIDMu3Zh2EQGVHldiYBLhne6cHput0yc73bwiEoxACFxes-0g1X2Th36g5pUPLr6JlhaFmeAkLhtCvWx76CGJIn26CYMsh36nSP-4PjHSZTlDYYHFCxgdKJlr6WarIctLJUSOlpka40VXNsX19wQWxrfjWVOSm5QyVNCtekhxyrcxwMA1PPFUN1cM-xjHwOIMXERkFn5fffbUd1OaWLhva6dMTFhbFj6SZXH0kztHVWpxdOcn7aU5k=s480-no?authuser=0",
+        "img_cred": "KateVoynova on Deviant Art"
+      }, {
+        "title": "Quest Template",
         "party": "Party Size | Level",
         "type": "Theme",
         "hook": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor.",
+        "players": 0,
         "img": "",
         "img_cred": ""
       }]

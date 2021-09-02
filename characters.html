@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
   <link href="/css/child.css" rel="stylesheet" />
-
-  <title>Bulletin</title>
+  <link rel="icon" href="imgs/scroll-solid.svg" type="image/svg" sizes="16x16">
+  <title>West Marches | Characters</title>
 </head>
 
 <body>
@@ -16,12 +19,12 @@
 
     <!-- Sidebar-->
     <div class="border-end bg-white" id="sidebar-wrapper">
-      <div class="sidebar-heading border-bottom bg-light">Characters</div>
+      <div class="sidebar-heading border-bottom bg-light"><b>Characters</b></div>
       <div class="list-group list-group-flush">
-        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../">Bulletin</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../">Archive</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3 is-disabled">Characters</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="rules.html">Guidelines / Rules</a>
-        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://www.worldanvil.com/w/confederation-marches-illogicalconsistency/map/58766450-0d0b-4bbc-8b52-7506d5dc5b74">WorldAnvil Map</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://www.worldanvil.com/w/confederation-marches-illogicalconsistency/map/58766450-0d0b-4bbc-8b52-7506d5dc5b74" target="_blank">WorldAnvil Map</a>
       </div>
     </div>
 
@@ -31,7 +34,7 @@
       <!-- Top navigation-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <div class="container-fluid">
-          <button class="btn btn-success" id="sidebarToggle">
+          <button class="btn btn-primary" id="sidebarToggle">
             Toggle Menu
           </button>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,19 +53,14 @@
 
       <!-- Page content-->
       <div class="container-fluid">
-        <h1 class="mt-4 large-title">
-          The Characters
-        </h1>
-        <p class="large-text">
-          This is a list of player characters who are currently a part of the campaign
-        </p>
+        <h1 class="mt-4 large-title">The Characters</h1>
+        <p class="large-text">This is a list of player characters who are currently a part of the campaign</p>
         <h3>There are currently no characters listed</h3>
       </div>
 
       <!-- Main Content List -->
       <div class="archive-list">
         <div class="char-list" id="char_list">
-
           <template>
             <div class="card card-post">
               <div class="row">
@@ -83,7 +81,6 @@
               </div>
             </div>
           </template>
-
         </div>
       </div>
 

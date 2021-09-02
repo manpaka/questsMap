@@ -31,11 +31,13 @@ function create_quest_card(quest, i) {
   quests_party = quest.quests[i].party;
   quests_type = quest.quests[i].type;
   quests_hook = quest.quests[i].hook;
+  quests_players = quest.quests[i].players;
   quests_img = quest.quests[i].img;
-  char_img_cred = quest.quests[i].img_cred;
+  quests_img_cred = quest.quests[i].img_cred;
 
   a = temp.content.getElementById("quest-img");
   a.setAttribute("src", quests_img);
+  a.setAttribute("alt", quests_img_cred);
   b = temp.content.getElementById("quest-title");
   b.innerHTML = quests_title
   c = temp.content.getElementById("quest-party");
@@ -61,11 +63,13 @@ function create_bounty_card(bounty, i) {
   bounty_party = bounty.bounties[i].party;
   bounty_type = bounty.bounties[i].type;
   bounty_hook = bounty.bounties[i].hook;
+  bounty_players = bounty.bounties[i].players;
   bounty_img = bounty.bounties[i].img;
   bounty_img_cred = bounty.bounties[i].img_cred;
 
   a = temp.content.getElementById("bounty-img");
   a.setAttribute("src", bounty_img);
+  a.setAttribute("alt", bounty_img_cred);
   b = temp.content.getElementById("bounty-title");
   b.innerHTML = bounty_title
   c = temp.content.getElementById("bounty-party");
@@ -86,6 +90,7 @@ function delete_empty_quest() {
   temp = document.getElementById("quest-list").firstElementChild;
   temp.remove();
 }
+
 function delete_empty_bounty() {
   var temp
   temp = document.getElementById("bounty-list").firstElementChild;

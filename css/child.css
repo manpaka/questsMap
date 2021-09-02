@@ -5,10 +5,15 @@
 
 .medium-text {
   font-size: 20px;
+  margin-bottom: 40px;
 }
 
 .large-text {
   font-size: 25px;
+}
+
+.bg-blueish {
+  background-color: #3aa2a7
 }
 
 .titles {
@@ -28,6 +33,17 @@
   color: currentColor;
   opacity: 0.5;
   background-color: #ddd
+}
+
+.group-xp {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+#group-xp {
+  height: 1vw;
 }
 
 .archive-list {
@@ -95,9 +111,15 @@
   margin-left: 10px;
 }
 
-.quest-type {}
+.quest-players {
+  margin-top: 1%;
+  margin-left: 4%;
+}
 
-.bounty-type {}
+.bounty-players {
+  margin-top: 1%;
+  margin-left: 4%;
+}
 
 .char-notes {
   width: 95%;
@@ -213,6 +235,10 @@
     font-size: 20px;
   }
 
+  #group-xp {
+    height: 1.5vw;
+  }
+
   .char-class {
     font-size: 18px;
   }
@@ -299,6 +325,10 @@
     flex: none;
   }
 
+  #group-xp {
+    height: 2vw;
+  }
+
   /* Fixes the Margins */
   .archive-list {
     margin-left: auto;
@@ -343,6 +373,10 @@
 
   .large-text {
     font-size: 18px;
+  }
+
+  #group-xp {
+    height: 3vw;
   }
 
   .small-titles>h1 {
