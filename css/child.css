@@ -44,6 +44,7 @@
 
 #group-xp {
   height: 1vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
 }
 
 .archive-list {
@@ -314,6 +315,10 @@
     height: 200px;
     width: 100%;
   }
+
+  #group-xp {
+    border-radius: 0.1rem;
+  }
 }
 
 /* Remove Images and Change Navbars */
@@ -389,5 +394,9 @@
 
   img {
     display: none;
+  }
+
+  #group-xp {
+    height: 5vw;
   }
 }
