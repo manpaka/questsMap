@@ -31,5 +31,4 @@ This is the code for a West Marches Campaign Website. If you find anything weird
 ### Update 21-09-02
 - Deleted empty quests and bounties.
 - Updated and finished the Rules and Guidelines.
-- Added Visuals to Rules and Guidelines.
 - Added Group Experience bar.
