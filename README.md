@@ -3,8 +3,7 @@ This is the code for a West Marches Campaign Website. If you find anything weird
 
 # To Do List
 ### Primary Tasks
-- Add changelog page to website.
-- Finish Rules and Guidelines on Website.
+- Add visuals to Rules and Guidelines.
 - Create Streamlined system to update quests and bounties without needing full website update.
 	- Potentially would require log in and user data system.
 
@@ -12,6 +11,8 @@ This is the code for a West Marches Campaign Website. If you find anything weird
 - Get more quests and bounties added to the JSON files.
 - Get some characters added to the JSON files.
 - Find way to properly store images.
+- Add changelog page to website.
+- Add a Dark Mode
 
 ### Ideas and Cool Potential Features
 - Add a "players joined" marker/system to the Quests and Bounties.
@@ -32,7 +33,7 @@ For more detailed updates read the Commit List
 - Finished CSS Screen Size Variations.
 - Essential Functions Finished.
 
-### Update 21-09-02
+### Update 21/09/02
 - Deleted empty quests and bounties.
 - Updated and finished the Rules and Guidelines.
 - Added Group Experience bar.
