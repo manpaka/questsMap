@@ -1,5 +1,5 @@
 // Fetch character Json data
-fetch('../scripts/quests.json')
+fetch('scripts/quests.json')
   .then(function(response) {
     return response.json();
   })

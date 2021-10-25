@@ -1,12 +1,5 @@
-/*!
- * Start Bootstrap - Simple Sidebar v6.0.3 (https://startbootstrap.com/template/simple-sidebar)
- * Copyright 2013-2021 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
- */
-
 // Toggle Button
 window.addEventListener('DOMContentLoaded', event => {
-
   // Toggle the side navigation
   const sidebarToggle = document.body.querySelector('#sidebarToggle');
   if (sidebarToggle) {
@@ -20,5 +13,4 @@ window.addEventListener('DOMContentLoaded', event => {
       localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
     });
   }
-
 });
