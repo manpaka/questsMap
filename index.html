@@ -6,19 +6,36 @@
     <meta name="description" content="Curse of Strahd Information">
 
     <title>Quests Info</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- Bootstrap 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!-- React 17 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
-    <script type="application/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
     <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- Basic CSS -->
     <style>
+        :root {
+            --img-size: 280px;
+            --obj-pos: 0px -160px;
+        }
+
         .magicItem { 
+            color: #198754;
+            text-decoration: underline;
+        }
+        .modalHighlight { 
             color: #198754;
             text-decoration: underline;
         }
@@ -30,6 +47,42 @@
             font-family: serif;
             font-style: italic;
         }
+        #footer {
+            background-color: rgb(185, 210, 219);
+        }
+
+        .img-crop {
+            width: max-content;
+            height: 280px;
+            object-fit: cover;
+            object-position: 0px -160px;
+        }
+
+        @media (max-width: 1400px) {
+            .img-crop {
+                height: 224px;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .img-crop {
+                height: 158px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .img-crop {
+                height: 148px;
+                object-position: 0px -75px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .img-crop {
+                height: 100px;
+                object-position: 0px -52px;
+            }
+        }
     </style>
 </head>
 
@@ -38,15 +91,16 @@
     <!-- Main Header -->
     <div class="flex-shrink-0 shadow bg-white">
         <div class="container mt-2">
-
             <!-- Main Header -->
             <header class="my-4">
                 <h1>The Strahd Bulletin</h1>
-                <h5 id="littleMessage" class="text-black-50">
-                    Hellow Orld
-                </h5>
+                <div id="littleMessage" class="text-black-50">
+                    <h5>
+                        Welcome, to Ravenloft... 
+                    </h5>
+                    <p>...enjoy your stay</p>
+                </div>
             </header>
-
         </div>
     </div>
 
@@ -73,25 +127,40 @@
                 <article class="shadow mt-3 bg-white">
                     <div class="mx-4 pt-2 pb-4">
                         <div class="m-3">
-                            <h2>Latest Recap</h2>
-                            <h5>Date: Dec 5th</h5>
+                            <img class="img-fluid img-thumbnail shadow img-crop" src="https://lichlair.com/wp-content/uploads/2019/12/image-11.png" alt="wereravens">
+                            <!-- https://lichlair.com/wp-content/uploads/2019/12/image-11.png -->
+                            <!-- https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdb4sgowjqfwig.cloudfront.net%2Fcampaigns%2F126914%2Fassets%2F1038622%2FGulthias_Tree.jpg%3F1579516207&f=1&nofb=1 -->
                             <hr>
-
+                            <h2><strong>Group Merger</strong></h2>
+                            <h5 class="text-black-50">December 5th Recap</h5>
+                            <hr>
                             <div id="recapParagraph">
                                 <!-- Magic Item Tag -->
-                                <!--
-                                    <b class="MagicItem">gauntlets-of-ogre-power</b> 
-                                -->
+                                <!--    <b class="MagicItem">gauntlets-of-ogre-power</b>    -->
                                 <p>
-                                    Stormfang Officiis aspernatur ut exercitationem. Dolorem et nostrum mollitia sit corrupti quidem. Sed velit aspernatur et quisquam occaecati quia. Ab iusto ratione distinctio quo non expedita omnis. Sint aperiam autem quia minus fugiat.
+                                    In the wild and dark land of Barovia an adventure begins with the meeting of two groups...
                                     <br><br>
-                                    Ducimus dolorem mollitia dolorem. Maxime expedita in qui repellat commodi officiis qui. Rerum qui eveniet laborum natus. Saepe natus omnis adipisci labore possimus. Molestias et ipsum nostrum modi.
+                                    After a long journey the five adventurers, areyja, hadrian, stormfang, the professor, kipna, and the giant owl lilkip had turned a corner to see the village of <strong>Kresk</strong> in the distance. It was midday and Hadrian&#39;s vision saw the unknown figures approaching the village in the evening. While moving towards the village Stormfang is grabbed and carried away by one of the Wareravens they had previously met outside of Vallaki, <strong>Adrian Martikov</strong>. Soon the entire party was grabbed, Kipna jumped onto Lil Kip mid-flight, and Hadrian had already started using his staff to follow along. The group was brought to a large Vineyard, known as <strong>The Wizard of the Wines</strong>. stormfang had arrived early to aid in the battle while the rest of the group had arrived at the very end, and there were some interesting new faces at the vineyard.
                                     <br><br>
-                                    Eos vitae ut occaecati excepturi consequatur et et. Dolorem autem laudantium itaque id commodi laborum voluptatibus. Ut et doloribus eum ea corrupti aut sequi et. Tempore a eos omnis. Sint unde repudiandae placeat harum nesciunt sequi sint. Magni odio quae ipsum.
+                                    Before they had arrived there was another group already there, cambyses, decax, and sander rainpath. The three wanted entry into Kresk a little bit ago and were told to go to the vineyard to see why there were no more shipments, then maybe they&#39;d be let into the village. They engaged a cult of insane druids who had infested the winery with Blights using a Gulthias Staff. Soon the three were joined by an early arrival, stormfang. After ridding the building of the blights, they noticed a larger force coming in from the south. As they prepared for a fight, cambyses discovered that the staff, upon being broken in half, would instantly kill all blights within 500ft of it with an ear piercing scream. To which the Tiefling snapped the staff on one of the building roofs.
                                     <br><br>
-                                    Voluptas exercitationem sint qui consequatur quis ut aliquam. Quasi nemo ipsa aspernatur omnis et nihil. Consequatur qui excepturi sed. Non iusto sit soluta vitae sed qui impedit. Consequatur dignissimos dolores id natus eos sapiente. Voluptatum dolores inventore labore.
+                                    The two groups soon converged and began having a discussion on their next course of action, along with methods of taming the large amount of ravens in the winery. hadrian flies off to tell the martikovs that their winery is cleaned out, along with that he gets some info about the Crawling Hut of the Witch, which he saw in the distance... Hadrian gets back the group and they continue to talk about ravens, but are cut off when they notice that areyja is missing. They start to look for the bard and a couple of them notice that she is out to the west, running into the forest.
                                     <br><br>
-                                    Sed commodi quia laudantium corrupti et amet eligendi quaerat. Ad maxime quia sed dolore vel. Et iste excepturi qui vero voluptas at dolorum magnam. Iusto et unde quo error beatae quia. Suscipit et praesentium mollitia. Asperiores sint fugit voluptatibus doloremque molestiae ut et.
+                                    Areyja had seen someone she knew and began chasing after the supposed apparition. The party chased after her, except Cambyses who was helping the Martikovs with cleaning. Soon they stop her deeper into the forest and see an oddity, Areyja sees the instrument of her teacher, Decax sees the body of juice, Sander sees the ashes of the wolf snarl, Kipna sees the body of Lil Kip, and Hadrian sees a small meat pie. Stormfang and the Professor see the illusion for what it is, a deep hole. Which closes immediately after the Professor pokes it with a stick. Ending the illusion.
+                                    <br><br>
+                                    The party soon went back to the winery. Areyja stays rather quiet, as Stormfang had aggressively held her back from grabbing the illusory instrument. They then had a couple options,
+                                    <ul>
+                                        <li>Go to the ruins of Berez and look for a supposed item that can aid them in Barovia,</li>
+                                        <li>Go back to Kresk for safety with a shipment of wine, or</li>
+                                        <li>Fight the wandering tree.</li>
+                                    </ul>
+                                    They decide to fight the tree.
+                                    <br><br>
+                                    They start their journey, Areyja is silent, and Hadrian is keeping track of the crawling tree. The party splits ways with the martikov wine cart and heads south east. After some time, they notice that the tree is climbing the hill up ahead. The party climbs the hill and soon see the tree stop at the center of the flat grass covered hilltop. The group then approaches the tree and sees that clearly lit front door. Stormfang, Decax, and Sander then go into the tree.
+                                    <br><br>
+                                    Inside the tree, Stormfang notices a shelf with a large book on it. He grabs the book and the tree suddenly becomes active as the door slams shut. Outside the party sees the door slam shut and the tree uprooting itself. As panic sets in, a massive ring of red light appears around the tree. Looking outside of the ring, a couple dozen ghostly blue humanoid forms appear.
+                                    <br><br>
+                                    <span class="text-black-50">The night is coming, and it will be a long night...</span>
                                 </p>
 
                                 <div class="modal fade" tabindex="-1" id="itemModal">
@@ -121,14 +190,14 @@
 
                                         </div>
                                     </div>
-                                </div>                                  
+                                </div>  
 
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Handouts -->
+                <!-- WIP Handouts -->
                 <!-- <article class="shadow mt-3 bg-white">
                     <div class="mx-4 pt-2 pb-4">
                         <div class="m-3">
@@ -174,10 +243,87 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 bg-dark bg-opacity-25">
+    <footer class="footer mt-auto py-3" id="footer">
         <div class="container">
+
+            <div class="modal fade" tabindex="-1" id="infoModal">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h3 class="item-title mb-0">
+                                Info
+                            </h3>
+                            <h5 class="item-subtitle text-black-50">
+                                A quick guide
+                            </h5>
+                        </div>
+
+                        <div class="modal-body mt-0 pt-0">
+                            <div class="accordion" id="accordionExample">
+
+                                <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What is this?
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                      <p>
+                                        Hello,
+                                        <br>
+                                        This handy little website was made to easily show information to players that are not possible with Discord. The site can give you info on when the next session is, the last sessions recap, and any notable information.
+                                      </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Why are some things in the recap highlighted?
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    As you can see in the recaps, there are a couple words that are highlighted differently. anything that is <strong>bolded</strong> is any character or specific names.
+                                    <br><br>
+                                    Magic items are <span class="modalHighlight"><a>highlighted green</a></span> and an info popup, for said highlighted Magic item appears, when clicked on.
+                                    <br>
+                                    <p class="text-black-50">Info is fetched from /dnd5eapi.co/ in basic json format</p> 
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Is this everything?
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                      Yes... For Now...
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             <span class="text-black-50">
-                The original quests.ilepp.com will be remade once Strahd is dead or something
+                If you are confused, click this <a type="button" data-toggle="modal" data-target="#infoModal"><i class="fas fa-question-circle"></i></a>
             </span>
         </div>
     </footer>

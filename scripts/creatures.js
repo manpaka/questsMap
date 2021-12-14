@@ -1,5 +1,5 @@
 var recap = document.getElementById('recapParagraph').innerHTML;
-var num = document.getElementsByClassName('MagicItem');
+var num = document.getElementsByClassName('Creature');
 
 for (let i = 0; i < num.length; i++) {
     var item = num[i];
