@@ -12,12 +12,17 @@ var names = {
     decax: "<b>Decax</b>",
     sander: "<b>Sander</b>",
     rainpath: "<b>Rainpath</b>",
+
     strahd: "<b>Strahd</b>",
-    martikovs: "<b>Martikovs</b>"
+    martikovs: "<b>Martikovs</b>",
+    dimitri: "<b>Dimitri Krezkov</b>",
+
+    krezk: "<b>Krezk</b>",
+    berez: "<b>Ruins of Berez</b>"
 }
 
 var output = rp.innerHTML.replace(
-    /stormfang|areyja|hadrian|professor|wynather|kipna|lilkip|cambyses|decax|sander|rainpath|martikovs/g, 
+    /stormfang|areyja|hadrian|professor|wynather|kipna|lilkip|cambyses|decax|sander|rainpath|martikovs|krezk|dimitri|berez/g, 
     function(matched){
         return names[matched];
     }

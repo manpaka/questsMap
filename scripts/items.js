@@ -25,9 +25,6 @@ function findItem(item){
 // desc [Subheading, Description]
 function magicItem(item, name, sub, desc) {
     console.log(item, '\n', name, '\n', sub, '\n', desc);
-
-
-
     ReactDOM.render(<HighlightItem target={name} name={name} sub={sub} desc={desc} />, item);
 }
 
