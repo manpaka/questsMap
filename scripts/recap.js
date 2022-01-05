@@ -13,7 +13,7 @@ var names = {
     sander: "<b>Sander</b>",
     rainpath: "<b>Rainpath</b>",
 
-    strahd: "<b>Strahd</b>",
+    strahd: "<b>Strahd Von Zarovich</b>",
     martikovs: "<b>Martikovs</b>",
     dimitri: "<b>Dimitri Krezkov</b>",
 
@@ -22,7 +22,7 @@ var names = {
 }
 
 var output = rp.innerHTML.replace(
-    /stormfang|areyja|hadrian|professor|wynather|kipna|lilkip|cambyses|decax|sander|rainpath|martikovs|krezk|dimitri|berez/g, 
+    /stormfang|areyja|hadrian|professor|wynather|kipna|lilkip|cambyses|decax|sander|rainpath|martikovs|krezk|dimitri|berez|strahd/g, 
     function(matched){
         return names[matched];
     }

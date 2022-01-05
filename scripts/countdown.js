@@ -1,7 +1,7 @@
-var countDownDate = "December 19, 2021"
+var countDownDate = "January 16, 2022 18:00 est"
 var countDown = new Date(countDownDate).getTime();
 
-document.getElementById("countdown").innerHTML = countDownDate.replace('2021', "");
+document.getElementById("countdown").innerHTML = countDownDate.replace('2022 18:00', "6pm");
 
 // Upcoming Dates
 /* 
@@ -26,7 +26,8 @@ var x = setInterval(function(){
     document.getElementById("TimeTill").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds till gameday?";
 
     if (distance < 0) {
+        console.log('Game Time')
         clearInterval(x);
-        document.getElementById("TimeTill") = "GAME TIME"
+        document.getElementById("TimeTill").innerHTML = "GAME TIME"
     }
 }, 1000);
