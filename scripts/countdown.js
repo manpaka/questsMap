@@ -1,17 +1,9 @@
-var countDownDate = "January 16, 2022 18:00 est"
+let dates = ["December 19", "January 02", "January 16", "January 23", "February 6", "February 20", "March 6", "March 20", "April 3", "April 17"]
+
+var countDownDate = dates[4] + ", 2022 18:00 est"
 var countDown = new Date(countDownDate).getTime();
 
 document.getElementById("countdown").innerHTML = countDownDate.replace('2022 18:00', "6pm");
-
-// Upcoming Dates
-/* 
-December 19, 2021
-January 02, 2022
-January 16, 2022
-January 30, 2022
-Febuary 13, 2022
-Febuary 27, 2022
-*/
 
 var x = setInterval(function(){
     var now = new Date().getTime();
@@ -31,3 +23,4 @@ var x = setInterval(function(){
         document.getElementById("TimeTill").innerHTML = "GAME TIME"
     }
 }, 1000);
+
