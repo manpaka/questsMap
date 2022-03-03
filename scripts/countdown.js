@@ -1,6 +1,6 @@
 let dates = ["December 19", "January 02", "January 16", "January 23", "February 6", "February 20", "March 6", "March 20", "April 3", "April 17"]
 
-var countDownDate = dates[5] + ", 2022 18:00 est"
+var countDownDate = dates[6] + ", 2022 18:00 est"
 var countDown = new Date(countDownDate).getTime();
 
 document.getElementById("countdown").innerHTML = countDownDate.replace('2022 18:00', "6pm");
