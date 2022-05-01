@@ -4,7 +4,7 @@ var timer = 11
 var countDownDate = dates[timer] + ", 2022 18:00 est"
 var countDown = new Date(countDownDate).getTime();
 
-document.getElementById("countdown").innerHTML = countDownDate.replace('2022 18:30', "6:30pm");
+document.getElementById("countdown").innerHTML = countDownDate.replace('2022 18:00', "6:00pm");
 
 var x = setInterval(function(){
     var now = new Date().getTime();
