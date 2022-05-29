@@ -1,6 +1,6 @@
-let dates = ["December 5", "December 19", "January 02", "January 16", "January 23", "February 6", "February 20", "March 6", "March 20", "April 3", "April 17", "May 1", "May 15", "May 29"]
+let dates = ["December 5", "December 19", "January 02", "January 16", "January 23", "February 6", "February 20", "March 6", "March 20", "April 3", "April 17", "May 1", "May 15", "May 29", "June 12", "June 26", ]
 
-var timer = 11
+var timer = 13
 var countDownDate = dates[timer] + ", 2022 18:00 est"
 var countDown = new Date(countDownDate).getTime();
 
