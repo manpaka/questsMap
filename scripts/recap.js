@@ -1,31 +1,40 @@
-var rp = document.getElementById("recapParagraph");
+function find(){
+    var source = "/scripts/recaps.json";
 
-var names = {
-    stormfang: "<b>Stormfang</b>",
-    areyja: "<b>Areyja</b>",
-    hadrian: "<b>Hadrian</b>",
-    professor: "<b>Professor</b>",
-    wynather: "<b>Wynather</b>",
-    kipna: "<b>Kipna</b>",
-    lilkip: "<b>Lil Kip</b>",
-    cambyses: "<b>Cambyses</b>",
-    decax: "<b>Decax</b>",
-    sander: "<b>Sander</b>",
-    rainpath: "<b>Rainpath</b>",
-
-    strahd: "<b>Strahd Von Zarovich</b>",
-    martikovs: "<b>Martikovs</b>",
-    dimitri: "<b>Dimitri Krezkov</b>",
-
-    krezk: "<b>Krezk</b>",
-    berez: "<b>Ruins of Berez</b>"
+    fetch(source)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(obj) {
+        loadContent(obj.one);
+        loadContent(obj.two);
+    })
+    .catch(function(error) {
+        console.error('Something Went Wrong');
+        console.error(error);
+    });
 }
 
-var output = rp.innerHTML.replace(
-    /stormfang|areyja|hadrian|professor|wynather|kipna|lilkip|cambyses|decax|sander|rainpath|martikovs|krezk|dimitri|berez|strahd/g, 
-    function(matched){
-        return names[matched];
-    }
-);
+function loadContent(content) {
+    console.log(content.Title);
+    // console.log(content.Date);
+    // console.log(content.Content); // Very Long
 
-document.getElementById("recapParagraph").innerHTML = output
+    for (i = 0; i < 2; i++) {
+        var temp = document.getElementsByTagName("template")[i]
+        if (i == 0){
+            temp.content.getElementById("item-title").innerHTML = content.Title
+            temp.content.getElementById("item-date").innerHTML = content.Date
+            var clon = temp.content.cloneNode(true);
+            document.getElementById("buttons").appendChild(clon);
+        } else {
+            temp.content.getElementById("item-title").innerHTML = content.Title
+            temp.content.getElementById("item-date").innerHTML = content.Date
+            temp.content.getElementById("item-content").innerHTML = content.Content
+            var clon = temp.content.cloneNode(true);
+            document.getElementById("modals").appendChild(clon);
+        }
+    }
+}
+
+find()

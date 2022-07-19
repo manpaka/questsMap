@@ -1,10 +1,10 @@
-let dates = ["December 5", "December 19", "January 02", "January 16", "January 23", "February 6", "February 20", "March 6", "March 20", "April 3", "April 17", "May 1", "May 15", "May 29", "June 12", "June 26", ]
+let dates = ["July 10", "July 24", "August 7", "August 21"]
 
-var timer = 14
-var countDownDate = dates[timer] + ", 2022 18:00 est"
+var timer = 1
+var countDownDate = dates[timer] + ", 2022 18:30 est"
 var countDown = new Date(countDownDate).getTime();
 
-document.getElementById("countdown").innerHTML = countDownDate.replace('2022 18:00', "6:00pm");
+document.getElementById("countdown").innerHTML = countDownDate.replace('2022 18:30', "6:30pm");
 
 var x = setInterval(function(){
     var now = new Date().getTime();
